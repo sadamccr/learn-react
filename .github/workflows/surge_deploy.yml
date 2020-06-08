@@ -40,4 +40,4 @@ jobs:
 #       run: echo Hello, world!
     
     - name: deploy surge
-      run: surge ./ build learn-react.surge.sh --token ${{ secrets.SURGE_TOKEN}}
+      run: surge ./ build learn-react.surge.sh -- token ${{ secrets.SURGE_TOKEN}}
