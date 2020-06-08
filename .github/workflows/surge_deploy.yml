@@ -34,10 +34,6 @@ jobs:
       run: yarn build
     - name: Install surge
       run: npm install --global surge
-      
-#      # Runs a single command using the runners shell
-#     - name: Run a one-line script
-#       run: echo Hello, world!
     
     - name: deploy surge
-      run: surge ./ build learn-react-sadam.surge.sh -- token ${{secrets.SURGE_TOKEN}}
+      run: surge ./ build learn-react-sadam.surge.sh --token ${{secrets.SURGE_TOKEN}}
